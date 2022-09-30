@@ -3,7 +3,7 @@
 		"version": 3
 	},
   "application": {
-    "name": "nextgen-ui",
+    "name": "test",
     "language": "NODEJS",
     "artifact_store": {
       "repositories": null
@@ -42,8 +42,7 @@
                 "command": "npm config set unsafe-perm true;\nnpm ci --cache ((npm.cache))",
                 "properties": null
               }
-             ],
-						"docker_options": {}
+             ]
 					}
 				]
 			}
