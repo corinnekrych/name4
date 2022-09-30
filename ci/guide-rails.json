@@ -1,14 +1,14 @@
 {
 	"metadata": {
-		"version": 2
+		"version": 3
 	},
-	"application": {
-		"name": "test",
-		"language": "LANGUAGE_UNDEFINED",
-		"artifact_store": {
-			"repositories": null
-		}
-	},
+  "application": {
+    "name": "nextgen-ui",
+    "language": "NODEJS",
+    "artifact_store": {
+      "repositories": null
+    }
+  },
 	"pipeline": {
 		"segments": [
 			{
@@ -35,6 +35,14 @@
 				"tasks": [
 					{
 						"name": "test",
+             "steps": [
+              {
+                "name": "Dependencies",
+                "definition": "Dependencies",
+                "command": "npm config set unsafe-perm true;\nnpm ci --cache ((npm.cache))",
+                "properties": null
+              }
+             ],
 						"docker_options": {}
 					}
 				]
