@@ -9,8 +9,3 @@ jobs:
         shell: sh
         run: |
           echo "hello world 24th may"
-on:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
