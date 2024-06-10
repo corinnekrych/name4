@@ -9,3 +9,5 @@ jobs:
         shell: sh
         run: |
           echo "hello world 24th may"
+on:
+  workflow_dispatch:
